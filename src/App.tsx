@@ -1,5 +1,6 @@
 import './App.css'
 import HelloWorld from "./HelloWorld.tsx";
+import CountExample from "./CountExample.tsx";
 
 // .ts = (Reine) Logik rein
 // .tsx = Template = Eine Datei wo Dinge zu sehen sind (im Browser)
@@ -23,9 +24,12 @@ export default function App() {
             return <HelloWorld name={name}/>
         })
 
+    console.log(nameComponents)
+
     return (
         <>
-            {nameComponents}
+            {/*{nameComponents}*/}
+            <CountExample />
         </>
     )
 }
